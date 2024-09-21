@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Target Attribute Example</title>
+</head>
+<body>
+    <h2>Form Target Attribute Example</h2>
+
+    <!-- Target _blank: Opens in a new window or tab -->
+    <form action="response.html" method="post" target="_blank">
+        <h3>Open in New Window/Tab (_blank)</h3>
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <!-- Target _self: Opens in the same window (default behavior) -->
+    <form action="response.html" method="post" target="_self">
+        <h3>Open in Same Window (_self)</h3>
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <!-- Target _parent: Opens in the parent frame -->
+    <form action="response.html" method="post" target="_parent">
+        <h3>Open in Parent Frame (_parent)</h3>
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <!-- Target _top: Opens in the full body of the window -->
+    <form action="response.html" method="post" target="_top">
+        <h3>Open in Full Body of the Window (_top)</h3>
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <!-- Target framename: Opens in a named iframe -->
+    <h3>Open in Named Iframe (framename)</h3>
+    <iframe name="myIframe" style="width: 100%; height: 100px;"></iframe>
+    <form action="response.html" method="post" target="myIframe">
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
